@@ -10,7 +10,8 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 script {
-                    docker.build('parth-flask-app')
+                    sh 'docker build -t parth-flask-app .'
+
                 }
             }
         }
