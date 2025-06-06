@@ -4,7 +4,7 @@ pipeline {
     statges {
         stage("Clone") {
             steps {
-                git url:"https://github.com/IradIcaTE/simple_web_app.git", branch: 'Main'
+                git url:"https://github.com/IradIcaTE/simple_web_app.git", branch: 'main'
             }
         }
         stage('Build Docker Image') {
