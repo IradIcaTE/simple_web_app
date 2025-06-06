@@ -1,7 +1,7 @@
 pipeline {
     agent { label "First" }
 
-    statges {
+    stages {
         stage("Clone") {
             steps {
                 git url:"https://github.com/IradIcaTE/simple_web_app.git", branch: 'main'
